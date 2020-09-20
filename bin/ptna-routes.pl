@@ -2235,7 +2235,7 @@ sub analyze_route_environment {
                 }
             } elsif ( $RELATIONS{$route_master_rel_id}->{'tag'}->{'colour'} ) {
                 $issues_string = gettext( "'colour' of Route is not set but 'colour' of Route-Master is set: %s" );
-                push( @{$relation_ptr->{'__issues__'}}, sprintf( $issues_string, printRelationTemplate($route_master_rel_id)) );
+                # push( @{$relation_ptr->{'__issues__'}}, sprintf( $issues_string, printRelationTemplate($route_master_rel_id)) );
             }
         }
 
